@@ -4,6 +4,8 @@ import './Header.css'
 import {
     Box,
     Flex,
+    Spacer,
+    Link,
     Avatar,
     HStack,
     Text,
@@ -18,7 +20,8 @@ import {
     useColorModeValue,
     Stack,
   } from '@chakra-ui/react'
-  import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+
 
 
 const Header = () => {
@@ -26,9 +29,8 @@ const Header = () => {
 
     return (
         <>
-            <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} as='header'>
-                <p>hola</p>
-                <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+            <Box bg='#fcfbf2' as='header' pl='35%'>
+                <Flex h={16} alignItems={'center'} justifyContent={'space-between'} m='3% 15% 0 15%'>
                     <IconButton
                         size={'md'}
                         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -36,8 +38,22 @@ const Header = () => {
                         display={{ md: 'none' }}
                         onClick={isOpen ? onClose : onOpen}
                     />
+                    <Flex
+                        width='40%'
+                        justifyContent='space-between'
+                        display={{base:'none', md:'flex'}}
+                    >
+                        <Link>Acerca de</Link>
+                        <Link>Servicios</Link>
+                        <Link>Experiencia</Link>
+                        <Link>Currículum</Link>
+                        <Link>Contacto</Link>
+                    </Flex>
+                    
 
                 </Flex>
+          
+                   
 
             </Box>
            
