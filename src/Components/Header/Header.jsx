@@ -29,25 +29,26 @@ const Header = () => {
 
     return (
         <>
-            <Box bg='#fcfbf2' as='header' pl='35%'>
-                <Flex h={16} alignItems={'center'} justifyContent={'space-between'} m='3% 15% 0 15%'>
+            <Box bg='#fcfbf2' as='header' pl={{base:'35%', md:'20%', lg:'35%'}}>
+                <Flex h={16} alignItems={'center'} justifyContent={'space-between'} m='3% 15% 0 15%' border={'solid red'} >
                     <IconButton
                         size={'md'}
                         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
                         aria-label={'Open Menu'}
                         display={{ md: 'none' }}
                         onClick={isOpen ? onClose : onOpen}
+                        border={'solid red'}
                     />
                     <Flex
-                        width='40%'
+                        width={'40%'}
                         justifyContent='space-between'
                         display={{base:'none', md:'flex'}}
                     >
-                        <Link>Acerca de</Link>
-                        <Link>Servicios</Link>
-                        <Link>Experiencia</Link>
-                        <Link>Currículum</Link>
-                        <Link>Contacto</Link>
+                        <Link variant={'nav'}>Acerca de</Link>
+                        <Link variant={'nav'}>Servicios</Link>
+                        <Link variant={'nav'}>Experiencia</Link>
+                        <Link variant={'nav'}>Currículum</Link>
+                        <Link variant={'nav'}>Contacto</Link>
                     </Flex>
                     
 
