@@ -59,6 +59,33 @@ const Link = {
               color: 'white', // Cambia el color del texto en hover
               textDecoration: 'none',
             },
+        },
+        v3:{
+            bg: 'white',
+            padding: '10px 40px',
+            color: 'black',
+            borderRadius: '2xl',
+            fontSize: 'sm',
+            fontWeight: '800',
+            transition: 'all 0.8s',
+            _hover: {
+                bg: '#ff6253',
+                textDecoration: 'none',
+                color: 'white'
+            }
+
+        },
+
+        v4:{
+            fontSize: 'lg',
+            color: '#ff6253',
+            transition: 'all 0.5s',
+            _hover: {
+                fontWeight: 'bold',
+                textDecorationColor: '#18e738',
+                textDecorationThickness: '0.2em',
+                textUnderlineOffset: '0.3em'
+            }
         }
 
     }
@@ -70,5 +97,12 @@ const Button = {
     }
 }
 
+const colors = {
+    brand:{
+        progress1: '#ffd400',
+        progress2: '#18e738',
+    },
+}
 
-export const theme = extendTheme({styles, components:{Link, Button}})
+
+export const theme = extendTheme({styles, colors,components:{Link, Button}})

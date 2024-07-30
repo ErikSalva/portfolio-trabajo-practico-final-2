@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, HStack, Link, Text } from '@chakra-ui/react';
 import React from 'react';
 import heroimage from '../../../public/img/hero-image.png'
 
@@ -25,20 +25,24 @@ const Hero = () => {
              >
 
                 <Box>
-                    <Text
-                        fontSize={{lg:'8xl'}}
+                    <Heading
+                        as='h1'
+                        size='4xl'
+                        fontSize={{base:'7xl', lg:'8xl'}}
                         color={'rgb(50,51,51)'}
                         fontWeight={'bold'}
-                        as='h1'
                         m={'0'}
+                        noOfLines={2}
                     >
                         Hola, soy <br/>Erik
-                    </Text>
+                    </Heading>
+                    
                     <Text
                         color={'rgb(50,51,51)'}
                         fontSize={{lg:'2xl'}}
                         fontWeight={'800'}
                         as='h2'
+                        mt='5%'
                     
                     >Soy estudiante de desarrollo web <Text as='span'color={'#18e738'}>.</Text></Text>
                     <HStack

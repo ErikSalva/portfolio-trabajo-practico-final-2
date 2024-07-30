@@ -14,7 +14,7 @@ const About = () => {
                     <Text
 
                         color={'rgb(50,51,51)'}
-                        fontSize={{lg:'2xl'}}
+                        fontSize={{lg:'3xl'}}
                         fontWeight={'800'}
                         as='h2'
                         m={'3% 0'}
