@@ -6,6 +6,7 @@ import Services from '../Services/Services';
 import Skills from '../Skills/Skills';
 import Proyects from '../Proyects/Proyects';
 import Portafolio from '../Portafolio/Portafolio';
+import Contact from '../Contact/Contact';
 
 const Main = () => {
     return (
@@ -17,6 +18,7 @@ const Main = () => {
             <Skills></Skills>
             <Proyects></Proyects>
             <Portafolio></Portafolio>
+            <Contact></Contact>
         </main>
         
     );

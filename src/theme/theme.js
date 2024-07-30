@@ -1,4 +1,5 @@
 import { extendTheme, textDecoration, transition } from '@chakra-ui/react'
+import { color } from 'framer-motion'
 import { Component } from 'react'
 
 const styles ={
@@ -92,9 +93,18 @@ const Link = {
 }
 
 const Button = {
-    baseStyle: {
-        fontWeight: 'light',
-    }
+    variants: {
+        loadmore:{
+            color: 'white',
+            bg: '#18e738',
+            transition: 'all 0.3s',
+            _hover: {
+                bg: '#ff6253'
+            }
+        },
+
+
+    },
 }
 
 const colors = {

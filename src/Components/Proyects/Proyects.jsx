@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Flex, Text, Link, Heading } from '@chakra-ui/react';
 import Carousel from './Carousel';
+import Carouselb from './Carouselb';
 
 const Proyects = () => {
     return (
-        <Flex bg='#fcfbf2'  p='5% 15%' as='section' >
-            <Box>
+        <Flex bg='#fcfbf2'  p='5% 15%' as='section'>
+            <Box w='100%'>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
                     <Heading
                         color={'rgb(50,51,51)'}
@@ -17,7 +18,7 @@ const Proyects = () => {
                     <Link variant={'v4'} >Ver Todos</Link>
                 </Flex>
                 <Carousel></Carousel>
-
+                <Carouselb></Carouselb>
             </Box>
             
         </Flex>
