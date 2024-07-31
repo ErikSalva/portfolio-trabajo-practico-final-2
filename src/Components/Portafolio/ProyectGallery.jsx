@@ -76,10 +76,10 @@ const ProjectGallery = () => {
     <Box>
       <Heading textAlign="center" mb={5}
         color={'rgb(50,51,51)'}
-        fontSize={{lg:'3xl'}}
+        fontSize={{base:'xl',sm:'2xl',lg:'3xl'}}
         fontWeight={'800'}
         as='h2'
-        m={'1% 0'}
+        m='4%'
       >
         Mira mi portafolio
       </Heading>

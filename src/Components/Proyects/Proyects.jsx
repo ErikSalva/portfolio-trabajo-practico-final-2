@@ -6,8 +6,8 @@ import { Link as ScrollLink } from 'react-scroll';
 
 const Proyects = () => {
     return (
-        <Flex bg='#fcfbf2'  p='5% 15%' as='section' id='curriculum'>
-            <Box w='100%'>
+        <Flex bg='#fcfbf2'  p='1% 15%' as='section' id='curriculum'>
+            <Box w='100%' mb={'8%'}>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
                     <Heading
                         color={'rgb(50,51,51)'}

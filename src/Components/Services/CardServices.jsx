@@ -38,8 +38,8 @@ const CardServices = ({title, description, imageUrl, color }) => {
                 </Box>
             
                 <Stack mt='6' >
-                    <Heading size='md' color={'black'}>{title}</Heading>
-                    <Text color={'black'}>
+                    <Heading size='md' color={'black'} fontWeight={'800'}>{title}</Heading>
+                    <Text color={'black'} fontSize={ {sm:'md', base:'xs'}}>
                         {description}
                     </Text>
                 </Stack>

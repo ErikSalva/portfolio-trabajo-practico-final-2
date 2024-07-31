@@ -25,7 +25,7 @@ const Services = () => {
             >Lo que hago como estudiante de Desarrollo Web</Heading>
 
             <Box alignItems={'center'} justifyContent={'center'} display={'flex'} >
-                <Stack direction={{lg:'row', base:'column'}} alignItems={'strech'} spacing={'10'} > 
+                <Stack direction={{xl:'row', base:'column'}} alignItems={'strech'} spacing={'10'} > 
                     <CardServices 
                         title={'Desarrollo Frontend'}
                         description={'Tengo experiencia como estudiante en el maquetado básico de sitios web utilizando HTML y CSS, lo que me permite crear interfaces web atractivas y funcionales.'}

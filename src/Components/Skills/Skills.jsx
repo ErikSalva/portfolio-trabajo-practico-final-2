@@ -16,7 +16,7 @@ const Skills = () => {
         <Box
             as='section'
             bg={'white'}
-            p='5% 15%'
+            p='1% 15%'
             id='experience'
 
         >
