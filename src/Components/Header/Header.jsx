@@ -43,28 +43,28 @@ const Header = () => {
 
                     {/* Desktop navigation */}
                     <HStack
-                        spacing={5}
+                        spacing={2}
                         display={{ base: 'none', md: 'flex' }}
                         alignItems={'center'}
                     >
                         <ScrollLink to="about" smooth={true} duration={500}>
-                            <Link variant={'nav'} >Acerca de</Link>
+                            <Link as='button' variant={'nav'} >Acerca de</Link>
                         </ScrollLink>       
 
                         <ScrollLink to="services" smooth={true} duration={500} >
-                            <Link variant={'nav'}>Servicios</Link>
+                            <Link as='button' variant={'nav'}>Servicios</Link>
                         </ScrollLink>   
 
                         <ScrollLink to="experience" smooth={true} duration={500} >
-                            <Link variant={'nav'}>Experiencia</Link>
+                            <Link as='button' variant={'nav'}>Experiencia</Link>
                         </ScrollLink>   
 
                         <ScrollLink to="curriculum" smooth={true} duration={500} >
-                            <Link variant={'nav'}>Currículum</Link>
+                            <Link as='button' variant={'nav'}>Currículum</Link>
                         </ScrollLink>   
 
                         <ScrollLink to="contact" smooth={true} duration={700} >
-                            <Link variant={'nav'}>Contacto</Link>
+                            <Link as='button' variant={'nav'}>Contacto</Link>
                         </ScrollLink>  
 
                     </HStack>
@@ -85,36 +85,40 @@ const Header = () => {
                                 onClick={onClose}  
                                 textAlign='center' 
                                 p={4}
+                                as='button'                                
                                 >Acerca de</Link>
 
                                 
                             </ScrollLink> 
 
                             <ScrollLink to="services" smooth={true} duration={500} >
-                                    <Link 
-                                    variant={'nav2'} 
-                                    onClick={onClose}  
-                                    textAlign='center' 
-                                    p={4}
-                                    >Servicios</Link>
+                                <Link 
+                                variant={'nav2'} 
+                                onClick={onClose}  
+                                textAlign='center' 
+                                p={4}
+                                as='button'
+                                >Servicios</Link>
 
                             </ScrollLink>
 
                             <ScrollLink to="experience" smooth={true} duration={500} >
-                                    <Link 
-                                    variant={'nav2'} 
-                                    onClick={onClose}  
-                                    textAlign='center' 
-                                    p={4}
-                                    >Experiencia</Link>
+                                <Link 
+                                variant={'nav2'} 
+                                onClick={onClose}  
+                                textAlign='center' 
+                                p={4}
+                                as='button'
+                                >Experiencia</Link>
                             </ScrollLink>
                             
                             <ScrollLink to="curriculum" smooth={true} duration={500} >
-                                    <Link 
-                                    variant={'nav2'} 
-                                    onClick={onClose}  
-                                    textAlign='center' 
-                                    p={4}>Currículum</Link>
+                                <Link 
+                                variant={'nav2'} 
+                                onClick={onClose}  
+                                textAlign='center' 
+                                as='button'
+                                p={4}>Currículum</Link>
 
                             </ScrollLink>
 
@@ -124,6 +128,7 @@ const Header = () => {
                                 variant={'nav2'} 
                                 onClick={onClose}  
                                 textAlign='center' 
+                                as='button'
                                 p={4}>Contacto</Link>
 
                             </ScrollLink>      

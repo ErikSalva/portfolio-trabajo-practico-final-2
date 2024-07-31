@@ -17,7 +17,7 @@ const Proyects = () => {
                         m={'3% 0'}
                     >Proyectos Recientes</Heading>
                     <ScrollLink to="portafolio" smooth={true} duration={500} >
-                        <Link variant={'v4'} >Ver Todos</Link>
+                        <Link variant={'v4'} as='button'>Ver Todos</Link>
                     </ScrollLink>
 
                     

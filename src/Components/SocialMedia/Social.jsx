@@ -43,23 +43,23 @@ const Social = () => {
             {!isMobile && (
                 <HStack spacing={5}>
                     <ScrollLink to="about" smooth={true} duration={500}>
-                        <Link variant={'nav'} >Acerca de</Link>
+                        <Link variant={'nav'} as='button'>Acerca de</Link>
                     </ScrollLink>       
 
                     <ScrollLink to="services" smooth={true} duration={500} >
-                        <Link variant={'nav'}>Servicios</Link>
+                        <Link variant={'nav'} as='button'>Servicios</Link>
                     </ScrollLink>   
 
                     <ScrollLink to="experience" smooth={true} duration={500} >
-                        <Link variant={'nav'}>Experiencia</Link>
+                        <Link variant={'nav'} as='button'>Experiencia</Link>
                     </ScrollLink>   
 
                     <ScrollLink to="curriculum" smooth={true} duration={500} >
-                        <Link variant={'nav'}>Currículum</Link>
+                        <Link variant={'nav'} as='button'>Currículum</Link>
                     </ScrollLink>   
 
                     <ScrollLink to="contact" smooth={true} duration={500} >
-                        <Link variant={'nav'}>Contacto</Link>
+                        <Link variant={'nav'} as='button'>Contacto</Link>
                     </ScrollLink> 
                 </HStack>
             )}
@@ -81,23 +81,23 @@ const Social = () => {
                     </MenuButton>
                     <MenuList>
                         <ScrollLink to="about" smooth={true} duration={700}>
-                            <MenuItem>Acerca de</MenuItem>
+                            <MenuItem as='button' >Acerca de</MenuItem>
                         </ScrollLink>    
 
                         <ScrollLink to="services" smooth={true} duration={500}>
-                            <MenuItem>Servicios</MenuItem>
+                            <MenuItem as='button'>Servicios</MenuItem>
                         </ScrollLink>
 
                         <ScrollLink to="experience" smooth={true} duration={500}>
-                            <MenuItem>Experiencia</MenuItem>
+                            <MenuItem as='button'>Experiencia</MenuItem>
                         </ScrollLink>       
 
                         <ScrollLink to="curriculum" smooth={true} duration={500}>
-                            <MenuItem>Currículum</MenuItem>
+                            <MenuItem as='button'>Currículum</MenuItem>
                         </ScrollLink>       
 
                         <ScrollLink to="contact" smooth={true} duration={500}>
-                            <MenuItem>Contacto</MenuItem>
+                            <MenuItem as='button'>Contacto</MenuItem>
                         </ScrollLink>       
 
 

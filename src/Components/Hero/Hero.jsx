@@ -54,11 +54,11 @@ const Hero = () => {
                         mt={'5%'}
                     >
                         <ScrollLink to="contact" smooth={true} duration={500} >
-                            <Link variant={'v1'} >CONTACTO</Link>
+                            <Link variant={'v1'} as='button'>CONTACTO</Link>
                         </ScrollLink>
 
                         <ScrollLink to="experience" smooth={true} duration={500} >
-                            <Link variant={'v2'} >SKILLS</Link>
+                            <Link variant={'v2'} as='button'>SKILLS</Link>
                         </ScrollLink>
                     </Stack>
                     

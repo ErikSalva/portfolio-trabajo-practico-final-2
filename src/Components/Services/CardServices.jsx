@@ -50,7 +50,7 @@ const CardServices = ({title, description, imageUrl, color }) => {
             <CardFooter justifyContent={'center'}>
 
             <ScrollLink to="curriculum" smooth={true} duration={500} >
-                <Link variant={'v3'}>
+                <Link variant={'v3'} as='button'>
                     COMENZAR<ArrowForwardIcon />
                 </Link>
             </ScrollLink>
