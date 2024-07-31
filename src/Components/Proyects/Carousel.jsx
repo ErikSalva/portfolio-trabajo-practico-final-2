@@ -23,19 +23,19 @@ const Carousel = () => {
       };
       const slides = [
         {
-          img: "../../../public/img/proyecto-form2.png",
+          img: "/img/proyecto-form2.png",
         },
         {
-          img: "../../../public/img/proyecto-carrito.png",
+          img: "/img/proyecto-carrito.png",
         },
         {
-          img: "../../../public/img/proyecto-login.png",
+          img: "/img/proyecto-login.png",
         },
         {
-          img: "../../../public/img/proyecto-pav.png",
+          img: "/img/proyecto-pav.png",
         },
         {
-          img: "../../../public/img/proyecto-servicios.png",
+          img: "/img/proyecto-servicios.png",
         },
       ];
       const [currentSlide, setCurrentSlide] = useState(0);

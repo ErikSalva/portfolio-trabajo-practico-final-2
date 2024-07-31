@@ -63,9 +63,12 @@ const FormContact = () => {
                     <VStack w={{base: '100%', lg:'80%'}} spacing={'4'}>
                         
                         <FormControl isInvalid={errors.name && touched.name}>
-                            <FormLabel  color={'#abacac'}>Nombre completo</FormLabel>
+                            <FormLabel htmlFor='name' color={'#abacac'}>Nombre completo</FormLabel>
                             <Input 
-                            bg='white' id='name' 
+                            bg='white' 
+                            id='name' 
+                            name='name' 
+
                             placeholder='Erik Salvatierra' 
                             value={values.name} type='text' 
                             onChange={handleChange}
@@ -75,10 +78,11 @@ const FormContact = () => {
                         </FormControl>
 
                         <FormControl isInvalid={errors.email && touched.email}>
-                            <FormLabel color={'#abacac'} >Dirección de correo electrónico</FormLabel>
+                            <FormLabel htmlFor='email' color={'#abacac'} >Dirección de correo electrónico</FormLabel>
                             <Input 
                             bg='white' 
-                            id='email' 
+                            id='email'
+                            name='email' 
                             placeholder='example@gmail.com' 
                             value={values.email} 
                             type='text' 
@@ -89,7 +93,7 @@ const FormContact = () => {
                         </FormControl>
                         
                         <FormControl isInvalid={errors.message && touched.message} >
-                            <FormLabel color={'#abacac'}>Mensaje</FormLabel>
+                            <FormLabel htmlFor='message' color={'#abacac'}>Mensaje</FormLabel>
                             <Textarea 
                             bg='white'
                             name="message"

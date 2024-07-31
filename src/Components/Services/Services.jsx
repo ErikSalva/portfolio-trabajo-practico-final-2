@@ -29,7 +29,7 @@ const Services = () => {
                     <CardServices 
                         title={'Desarrollo Frontend'}
                         description={'Tengo experiencia como estudiante en el maquetado básico de sitios web utilizando HTML y CSS, lo que me permite crear interfaces web atractivas y funcionales.'}
-                        imageUrl={'../../../public/img/website-maintenance.svg'}
+                        imageUrl={'/img/website-maintenance.svg'}
                         color={'#9ea9fe'}
                         
                     ></CardServices>
@@ -37,7 +37,7 @@ const Services = () => {
                     <CardServices
                         title={'Desarrollo con C#'}
                         description={'He trabajado en el desarrollo de aplicaciones de escritorio usando C# y WinForms, lo que me ha brindado una sólida base en la programación orientada a objetos.'}
-                        imageUrl={'../../../public/img/developer-team.svg'}
+                        imageUrl={'/img/developer-team.svg'}
                         color={'#b2fe77'}
                         
                     ></CardServices>
@@ -45,7 +45,7 @@ const Services = () => {
                     <CardServices
                         title={'Gestión de Bases de Datos'}
                         description={'En la facultad, he trabajado con Microsoft SQL Server realizando ABMs (Altas, Bajas y Modificaciones) en bases de datos, adquiriendo experiencia en la gestión y manipulación de datos.'}
-                        imageUrl={'../../../public/img/database-svgrepo-com.svg'}
+                        imageUrl={'/img/database-svgrepo-com.svg'}
                         color={'#fee063'}
                     ></CardServices>
                 </Stack>

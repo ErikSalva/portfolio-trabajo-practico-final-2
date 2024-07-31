@@ -1,6 +1,6 @@
 import { Box, Flex, Heading, HStack, Link, Text, Stack } from '@chakra-ui/react';
 import React from 'react';
-import heroimage from '../../../public/img/hero-image.png'
+import heroimage from '/img/hero-image.png'
 
 import { Link as ScrollLink } from 'react-scroll';
 
@@ -30,7 +30,7 @@ const Hero = () => {
                     <Heading
                         as='h1'
                         size='4xl'
-                        fontSize={{base:'4xl', md:'8xl'}}
+                        fontSize={{sm:'6xl', md:'8xl', base:'4xl'}}
                         color={'rgb(50,51,51)'}
                         fontWeight={'bold'}
                         m={'0'}

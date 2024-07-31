@@ -34,7 +34,7 @@ const About = () => {
                 
                 <Box display={{base:'none', md:'Block'}} width={'35%'}>
                     <Image 
-                        src='../../../public/img/about-image.jpg'
+                        src='/img/about-image.jpg'
                     > </Image>
                 </Box>
 
