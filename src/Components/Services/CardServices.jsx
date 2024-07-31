@@ -35,7 +35,6 @@ const CardServices = ({title, description, imageUrl, color }) => {
                     src= {imageUrl} //'../../../public/img/website-maintenance.svg'
                     height={'150px'}
                     />
-
                 </Box>
             
                 <Stack mt='6' >

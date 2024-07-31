@@ -18,7 +18,7 @@ const Tecno = () => {
                     <Image 
                         src='/img/1200px-HTML5_Badge.svg.png'
                         width={'40%'}
-                    > </Image>
+                    />
                     <Text as='p' fontSize={{base:'xs', sm:'sm'}}>Html</Text>
                 </HStack>
 
@@ -31,7 +31,7 @@ const Tecno = () => {
                     <Image 
                         src='/img/CSS3_logo.svg.png'
                         width={'40%'}
-                    > </Image>
+                    /> 
                     <Text as='p' fontSize={{base:'xs', sm:'sm'}} >Css</Text>
                 </HStack>
 
@@ -44,7 +44,7 @@ const Tecno = () => {
                     <Image 
                         src='/img/python-5-logo-svg-vector.svg'
                         width={'40%'}
-                    > </Image>
+                    /> 
                     <Text as='p' fontSize={{base:'xs', sm:'sm'}}>Python</Text>
                 </HStack>
 
@@ -57,7 +57,7 @@ const Tecno = () => {
                     <Image 
                         src='/img/csharp-logo.svg'
                         width={'40%'}
-                    > </Image>
+                    />
                     <Text as='p' fontSize={{base:'xs', sm:'sm'}}>C#</Text>
                 </HStack>
             </HStack>

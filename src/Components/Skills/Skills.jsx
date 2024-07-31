@@ -49,7 +49,7 @@ const Skills = () => {
 
                 </Box>
                 <Box display={{base:'none', md:'Block'}} width={'35%'}>
-                    <Image src='/img/skills-image.jpg' width={'100%'}></Image>
+                    <Image src='/img/skills-image.jpg' width={'100%'}/>
                 </Box>
             </Stack>
         </Box>
