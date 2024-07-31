@@ -19,6 +19,9 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { Link as ScrollLink } from 'react-scroll';
+import { FaGithub } from "react-icons/fa";
+
 
 import { HiMenu } from 'react-icons/hi';
 
@@ -39,11 +42,25 @@ const Social = () => {
             {/* Menú de Navegación para pantallas grandes */}
             {!isMobile && (
                 <HStack spacing={5}>
-                    <Link variant='nav'>Acerca de</Link>
-                    <Link variant='nav'>Servicios</Link>
-                    <Link variant='nav'>Experiencia</Link>
-                    <Link variant='nav'>Currículum</Link>
-                    <Link variant='nav'>Contacto</Link>
+                    <ScrollLink to="about" smooth={true} duration={500}>
+                        <Link variant={'nav'} >Acerca de</Link>
+                    </ScrollLink>       
+
+                    <ScrollLink to="services" smooth={true} duration={500} >
+                        <Link variant={'nav'}>Servicios</Link>
+                    </ScrollLink>   
+
+                    <ScrollLink to="experience" smooth={true} duration={500} >
+                        <Link variant={'nav'}>Experiencia</Link>
+                    </ScrollLink>   
+
+                    <ScrollLink to="curriculum" smooth={true} duration={500} >
+                        <Link variant={'nav'}>Currículum</Link>
+                    </ScrollLink>   
+
+                    <ScrollLink to="contact" smooth={true} duration={500} >
+                        <Link variant={'nav'}>Contacto</Link>
+                    </ScrollLink> 
                 </HStack>
             )}
 
@@ -63,11 +80,27 @@ const Social = () => {
                         Menú
                     </MenuButton>
                     <MenuList>
-                        <MenuItem>Acerca de</MenuItem>
-                        <MenuItem>Servicios</MenuItem>
-                        <MenuItem>Experiencia</MenuItem>
-                        <MenuItem>Currículum</MenuItem>
-                        <MenuItem>Contacto</MenuItem>
+                        <ScrollLink to="about" smooth={true} duration={700}>
+                            <MenuItem>Acerca de</MenuItem>
+                        </ScrollLink>    
+
+                        <ScrollLink to="services" smooth={true} duration={500}>
+                            <MenuItem>Servicios</MenuItem>
+                        </ScrollLink>
+
+                        <ScrollLink to="experience" smooth={true} duration={500}>
+                            <MenuItem>Experiencia</MenuItem>
+                        </ScrollLink>       
+
+                        <ScrollLink to="curriculum" smooth={true} duration={500}>
+                            <MenuItem>Currículum</MenuItem>
+                        </ScrollLink>       
+
+                        <ScrollLink to="contact" smooth={true} duration={500}>
+                            <MenuItem>Contacto</MenuItem>
+                        </ScrollLink>       
+
+
                     </MenuList>
                 </Menu>
             )}
@@ -79,7 +112,7 @@ const Social = () => {
                 mt={'3%'}
 
             >
-                <Link>
+                <Link href='https://www.facebook.com/Erikshalva/' isExternal>
                     <Box
                         as={FaFacebookSquare}
                         color='#ff6253'
@@ -91,7 +124,7 @@ const Social = () => {
                     />
                 </Link>
 
-                <Link>
+                <Link href='https://www.linkedin.com/in/eriksalvatierra/' isExternal>
                     <Box
                         as={FaLinkedin}
                         color='#ff6253'
@@ -103,7 +136,7 @@ const Social = () => {
                     />
                  </Link>
 
-                <Link>
+                <Link href='https://www.instagram.com/erik_shalva/' isExternal>
                     <Box
                         as={FaInstagram}
                         color='#ff6253'
@@ -114,6 +147,20 @@ const Social = () => {
                         }}
                     />
                 </Link>
+
+                <Link href='https://github.com/ErikSalva' isExternal>
+                    <Box
+                        as={FaGithub}
+                        color='#ff6253'
+                        size='30px'
+                        transition='all 0.5s'
+                        _hover={{
+                            color: '#18e738'
+                        }}
+                    />
+                </Link>
+
+
             </HStack>
 
             <Text fontSize={{md:'sm', base:'xs'}} mt={'2%'}>@Copyright 2024 - Erik Salvatierra</Text>

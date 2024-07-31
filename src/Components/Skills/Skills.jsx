@@ -17,6 +17,7 @@ const Skills = () => {
             as='section'
             bg={'white'}
             p='5% 15%'
+            id='experience'
 
         >
              <Stack direction={['column', 'row']} justifyContent={'space-between'} width={'100%'}>

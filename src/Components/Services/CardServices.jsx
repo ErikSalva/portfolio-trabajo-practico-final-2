@@ -17,6 +17,8 @@ import {
 import { Card, CardHeader, CardBody, CardFooter } from '@chakra-ui/react'
 
 import { ArrowForwardIcon } from '@chakra-ui/icons'
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const CardServices = ({title, description, imageUrl, color }) => {
     return (
@@ -46,9 +48,13 @@ const CardServices = ({title, description, imageUrl, color }) => {
 
             </CardBody>
             <CardFooter justifyContent={'center'}>
+
+            <ScrollLink to="curriculum" smooth={true} duration={500} >
                 <Link variant={'v3'}>
                     COMENZAR<ArrowForwardIcon />
                 </Link>
+            </ScrollLink>
+                
             </CardFooter>
         </Card>
     );

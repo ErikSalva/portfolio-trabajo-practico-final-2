@@ -8,6 +8,7 @@ const About = () => {
             p='5% 15%'
             alignItems={'center'}
             justifyContent={'center'}
+            id='about'
         >
             <Stack direction={['column', 'row']} justifyContent={'space-between'}>
                 <Box width={{base:'100%', md:'50%'}} textAlign={'justify'}>

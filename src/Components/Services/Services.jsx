@@ -11,6 +11,7 @@ const Services = () => {
             alignItems={'center'}
             justifyContent={'center'}
             bg='#fcfbf2'
+            id='services'
         >
             <Box textAlign={'center'}>
             <Heading
@@ -19,6 +20,7 @@ const Services = () => {
                 fontWeight={'800'}
                 as='h2'
                 m={'5% 0'}
+                
                 
             >Lo que hago como estudiante de Desarrollo Web</Heading>
 

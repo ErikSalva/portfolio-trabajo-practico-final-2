@@ -19,14 +19,14 @@ const Link = {
         nav: {
             color: '#131212',
             transition: 'all 0.3s',
-             minWidth: '100px',
+            minWidth: '100px',
             _hover: {
                 fontWeight: 'bold',
                 textDecorationColor: '#18e738',
                 textDecorationThickness: '0.2em',
                 textUnderlineOffset: '0.3em',
             },
-            fontSize: 'sm',
+            fontSize: 'xs',
             fontWeight:'500'
         },
         nav2: {

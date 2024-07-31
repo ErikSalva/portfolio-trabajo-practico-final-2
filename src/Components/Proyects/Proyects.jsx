@@ -1,11 +1,12 @@
 import React from 'react';
 import { Box, Flex, Text, Link, Heading } from '@chakra-ui/react';
 import Carousel from './Carousel';
-import Carouselb from './Carouselb';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const Proyects = () => {
     return (
-        <Flex bg='#fcfbf2'  p='5% 15%' as='section'>
+        <Flex bg='#fcfbf2'  p='5% 15%' as='section' id='curriculum'>
             <Box w='100%'>
                 <Flex justifyContent={'space-between'} alignItems={'center'}>
                     <Heading
@@ -15,7 +16,11 @@ const Proyects = () => {
                         as='h2'
                         m={'3% 0'}
                     >Proyectos Recientes</Heading>
-                    <Link variant={'v4'} >Ver Todos</Link>
+                    <ScrollLink to="portafolio" smooth={true} duration={500} >
+                        <Link variant={'v4'} >Ver Todos</Link>
+                    </ScrollLink>
+
+                    
                 </Flex>
                 <Carousel></Carousel>
             </Box>

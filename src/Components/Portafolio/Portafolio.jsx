@@ -4,7 +4,7 @@ import ProjectGallery from './ProyectGallery';
 
 const Portafolio = () => {
     return (
-        <Box as='section' bg={'white'} p={'5% 15%'}>
+        <Box as='section' bg={'white'} p={'5% 15%'} id='portafolio'>
             <ProjectGallery></ProjectGallery>
         </Box>
     );

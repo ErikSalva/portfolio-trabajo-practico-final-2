@@ -3,7 +3,7 @@ import { Box, Flex, Text, VStack, Stack } from '@chakra-ui/react';
 import FormContact from './FormContact';
 const Contact = () => {
     return (
-        <Box bg='#fcfbf2'  p='5% 15%' as='section'>
+        <Box bg='#fcfbf2'  p='5% 15%' as='section' id='contact'>
             <Stack 
             w={'100%'} 
             justifyContent={'space-between'} 

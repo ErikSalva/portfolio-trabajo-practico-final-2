@@ -2,6 +2,8 @@ import { Box, Flex, Heading, HStack, Link, Text, Stack } from '@chakra-ui/react'
 import React from 'react';
 import heroimage from '../../../public/img/hero-image.png'
 
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const Hero = () => {
     return (
@@ -51,8 +53,13 @@ const Hero = () => {
                         spacing={10}
                         mt={'5%'}
                     >
-                        <Link variant={'v1'} >CONTACTO</Link>
-                        <Link variant={'v2'} >SKILLS</Link>
+                        <ScrollLink to="contact" smooth={true} duration={500} >
+                            <Link variant={'v1'} >CONTACTO</Link>
+                        </ScrollLink>
+
+                        <ScrollLink to="experience" smooth={true} duration={500} >
+                            <Link variant={'v2'} >SKILLS</Link>
+                        </ScrollLink>
                     </Stack>
                     
                 </Box> 
