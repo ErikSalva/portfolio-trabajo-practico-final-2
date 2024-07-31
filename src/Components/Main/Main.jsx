@@ -7,10 +7,13 @@ import Skills from '../Skills/Skills';
 import Proyects from '../Proyects/Proyects';
 import Portafolio from '../Portafolio/Portafolio';
 import Contact from '../Contact/Contact';
+import Footer from '../Footer/Footer';
+import Newsletter from '../Newsletter/Newsletter';
+import { Box } from '@chakra-ui/react';
 
 const Main = () => {
     return (
-        <main>
+        <Box as='main'>
             <Hero></Hero>
             <Tecno></Tecno>
             <About></About>
@@ -19,7 +22,7 @@ const Main = () => {
             <Proyects></Proyects>
             <Portafolio></Portafolio>
             <Contact></Contact>
-        </main>
+        </Box>
         
     );
 }

@@ -61,13 +61,13 @@ const Carousel = () => {
             _dark={{
             bg: "#3e3e3e",
             }}
-            p={10}
+            p={{lg:10, base:0}}
             alignItems="center"
             justifyContent="center"
             
         >
             <Flex w="full" overflow="hidden" pos="relative" borderRadius={'2xl'} boxShadow={'0 0 4px -1px #898989'}>
-                <Flex h="500px" w="full" {...carouselStyle}>
+                <Flex h={{lg:'500px', md:'350px', base:'150px', sm:'250px'}} w="full" {...carouselStyle}>
                     {slides.map((slide, sid) => (
                     <Box key={`slide-${sid}`} boxSize="full" shadow="md" flex="none">
                         <Text
@@ -93,10 +93,10 @@ const Carousel = () => {
                     ))}
                 </Flex>
 
-                <Text {...arrowStyles} left="0" onClick={prevSlide}>
+                <Text {...arrowStyles} left="0" onClick={prevSlide} fontSize={{lg:'4xl', sm:'2xl', base:'xl'}}>
                     &#10094;
                 </Text>
-                <Text {...arrowStyles} right="0" onClick={nextSlide}>
+                <Text {...arrowStyles} right="0" onClick={nextSlide} fontSize={{lg:'4xl', sm:'2xl', base:'xl'}}>
                     &#10095;
                 </Text>
             </Flex>

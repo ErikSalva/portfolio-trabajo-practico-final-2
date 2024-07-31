@@ -38,7 +38,7 @@ const Carouselb = () => {
 
     if (offset === 0) {
       return {
-        transform: 'scale(0.9)',
+        transform: 'scale(0.8)',
         zIndex: 2,
         transition: 'all 0.8s',
         position: 'absolute',
@@ -49,7 +49,7 @@ const Carouselb = () => {
       };
     } else if (offset === 1 || offset === slidesCount - 1) {
       return {
-        transform: 'scale(0.8)',
+        transform: 'scale(0.6)',
         zIndex: 1,
         transition: 'all 0.8s',
         position: 'absolute',
@@ -81,13 +81,19 @@ const Carouselb = () => {
       justifyContent="center"
       border={'solid'}
     >
-      <Flex w="full" overflow="hidden" pos="relative" height="400px" alignItems={'center'} >
+      <Flex 
+      w="full" 
+      pos="relative" 
+      overflow="hidden" 
+
+      height={{lg:'400px', sm: '300px', base: '200px'}} 
+      alignItems={'center'} >
         {slides.map((slide, index) => (
           <Box
             key={index}
             style={getSlideStyle(index)}
             boxSize="full"
-
+            border={'solid red'}
 
           >
             <Image
@@ -106,7 +112,7 @@ const Carouselb = () => {
           pos="absolute"
           top="50%"
           left="0"
-          transform="translateY(-50%)"
+          transform="translateY(-50%) translateX(-30%)"
           p="16px"
           fontSize="24px"
           color="black"
@@ -120,7 +126,7 @@ const Carouselb = () => {
           pos="absolute"
           top="50%"
           right="0"
-          transform="translateY(-50%)"
+          transform="translateY(-50%) translateX(30%)"
           p="16px"
           fontSize="24px"
           color="black"

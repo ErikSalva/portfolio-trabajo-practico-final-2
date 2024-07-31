@@ -1,5 +1,4 @@
 import React from 'react';
-import './Header.css'
 
 import {
     Box,
@@ -29,8 +28,16 @@ const Header = () => {
 
     return (
         <>
-            <Box bg='#fcfbf2' as='header' pl={{base:'35%', md:'20%', lg:'35%'}}>
-                <Flex h={16} alignItems={'center'} justifyContent={'space-between'} m='3% 15% 0 15%' border={'solid red'} >
+            <Box bg={{md:'#fcfbf2', base:'rgb(50,51,51)'}} 
+            as='header' 
+            pl={{base:'0', md:'20%', lg:'35%'}}>
+                <Flex 
+                    h={16} 
+                    alignItems={'center'} 
+                    justifyContent={{md:'space-between', base:'center'}} 
+                    m={{base:'0', md:'3% 15% 0 15%'}} 
+                    border={'solid red'} 
+                >
                     <IconButton
                         size={'md'}
                         icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
@@ -39,17 +46,17 @@ const Header = () => {
                         onClick={isOpen ? onClose : onOpen}
                         border={'solid red'}
                     />
-                    <Flex
-                        width={'40%'}
-                        justifyContent='space-between'
+                    <HStack
+                        spacing={2}                        
                         display={{base:'none', md:'flex'}}
+                        border={'solid blue'}
                     >
                         <Link variant={'nav'}>Acerca de</Link>
                         <Link variant={'nav'}>Servicios</Link>
                         <Link variant={'nav'}>Experiencia</Link>
                         <Link variant={'nav'}>Currículum</Link>
                         <Link variant={'nav'}>Contacto</Link>
-                    </Flex>
+                    </HStack>
                     
 
                 </Flex>

@@ -29,6 +29,18 @@ const Link = {
             fontSize: 'sm',
             fontWeight:'500'
         },
+        nav2: {
+            color: 'white',
+            transition: 'all 0.3s',
+             minWidth: '100px',
+            _hover: {
+                fontWeight: 'bold',
+                textDecoration: 'none',
+   
+            },
+            fontSize: 'sm',
+            fontWeight:'500'
+        },
         v1:{
             bg: '#18e738', // Color de fondo
             p: '7px 30px', // Padding: 7px arriba y abajo, 30px a los lados

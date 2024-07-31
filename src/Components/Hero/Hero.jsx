@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, HStack, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, Heading, HStack, Link, Text, Stack } from '@chakra-ui/react';
 import React from 'react';
 import heroimage from '../../../public/img/hero-image.png'
 
@@ -6,7 +6,7 @@ import heroimage from '../../../public/img/hero-image.png'
 const Hero = () => {
     return (
         <Flex as='section'
-            p='0 0 0 15%'
+            p={{md:'0 0 0 15%', base:'0 15% 0 15%'}}
             height= '80vh'
             justifyContent={'center'}
             alignItems={'center'}
@@ -28,7 +28,7 @@ const Hero = () => {
                     <Heading
                         as='h1'
                         size='4xl'
-                        fontSize={{base:'7xl', lg:'8xl'}}
+                        fontSize={{base:'4xl', md:'8xl'}}
                         color={'rgb(50,51,51)'}
                         fontWeight={'bold'}
                         m={'0'}
@@ -45,13 +45,15 @@ const Hero = () => {
                         mt='5%'
                     
                     >Soy estudiante de desarrollo web <Text as='span'color={'#18e738'}>.</Text></Text>
-                    <HStack
-                        spacing={'50px'}
+                    <Stack
+                        direction={{base:'column', sm:'row'}}
+                        fontSize={{base:'md'}}
+                        spacing={10}
                         mt={'5%'}
                     >
-                        <Link variant={'v1'}>CONTACTO</Link>
-                        <Link variant={'v2'}>SKILLS</Link>
-                    </HStack>
+                        <Link variant={'v1'} >CONTACTO</Link>
+                        <Link variant={'v2'} >SKILLS</Link>
+                    </Stack>
                     
                 </Box> 
             </Flex>

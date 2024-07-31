@@ -83,7 +83,7 @@ const ProjectGallery = () => {
       >
         Mira mi portafolio
       </Heading>
-      <Flex justifyContent="center" mb={5}>
+      <Flex justifyContent="center" mb={5} direction={{base: 'column', lg:'row'}}>
         {categories.map((category) => (
           <Button
             key={category}
@@ -92,6 +92,7 @@ const ProjectGallery = () => {
             bg={selectedCategory === category ? '#18e738' : 'white'}
             color={selectedCategory === category ? 'white' : 'black'}            
             border={'none'}
+            fontSize={'xs'}
             transition={'all 0.3s'}
             _hover={{
                 backgroundColor: '#18e738',
@@ -104,11 +105,11 @@ const ProjectGallery = () => {
           </Button>
         ))}
       </Flex>
-      <Grid templateColumns="repeat(2, 1fr)" gap={10}>
+      <Grid templateColumns={{base:"1fr", lg:"repeat(2, 1fr)"}} gap={10}>
         {filteredProjects.slice(0, visibleProjects).map((project) => (
           <Box
             key={project.id}
-            h="300px"
+            h={{lg:'350x', sm: '250px', base: '150px', md:'400px', xl:'400px', '2xl':'450px'}}
             bg="white"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

@@ -18,7 +18,6 @@ const Proyects = () => {
                     <Link variant={'v4'} >Ver Todos</Link>
                 </Flex>
                 <Carousel></Carousel>
-                <Carouselb></Carouselb>
             </Box>
             
         </Flex>

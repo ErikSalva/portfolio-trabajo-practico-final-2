@@ -1,9 +1,15 @@
 import React from 'react';
+import Newsletter from '../Newsletter/Newsletter';
+import { Box } from '@chakra-ui/react';
+import Social from '../SocialMedia/Social';
 
 const Footer = () => {
     return (
-        <footer>
-        </footer>
+        <Box as='footer'>
+            <Newsletter></Newsletter>
+            <Social></Social>
+        </Box>
+        
     );
 }
 
