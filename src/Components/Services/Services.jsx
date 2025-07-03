@@ -26,28 +26,41 @@ const Services = () => {
 
             <Box alignItems={'center'} justifyContent={'center'} display={'flex'} >
                 <Stack direction={{xl:'row', base:'column'}} alignItems={'strech'} spacing={'10'} > 
-                    <CardServices 
-                        title={'Desarrollo Frontend'}
-                        description={'Tengo experiencia como estudiante en el maquetado básico de sitios web utilizando HTML y CSS, lo que me permite crear interfaces web atractivas y funcionales.'}
+                    <CardServices
+                        title={'Frontend'}
+                        description={
+                            'Desarrollo interfaces web con React, HTML, CSS y JavaScript, creando experiencias modernas, responsivas y usables.'
+                        }
                         imageUrl={'/img/website-maintenance.svg'}
                         color={'#9ea9fe'}
-                        
-                    ></CardServices>
+                        ></CardServices>
 
-                    <CardServices
-                        title={'Desarrollo con C#'}
-                        description={'He trabajado en el desarrollo de aplicaciones de escritorio usando C# y WinForms, lo que me ha brindado una sólida base en la programación orientada a objetos.'}
+                        <CardServices
+                        title={'Backend'}
+                        description={
+                            'Desarrollo APIs y servicios con Node.js y Express, aplicando buenas prácticas y arquitectura escalable.'
+                        }
                         imageUrl={'/img/developer-team.svg'}
                         color={'#b2fe77'}
-                        
-                    ></CardServices>
+                        ></CardServices>
 
-                    <CardServices
-                        title={'Gestión de Bases de Datos'}
-                        description={'En la facultad, he trabajado con Microsoft SQL Server realizando ABMs (Altas, Bajas y Modificaciones) en bases de datos, adquiriendo experiencia en la gestión y manipulación de datos.'}
+                        <CardServices
+                        title={'Bases de Datos'}
+                        description={
+                            'Experiencia en bases de datos relacionales como SQL Server y MySQL, y bases no relacionales como MongoDB.'
+                        }
                         imageUrl={'/img/database-svgrepo-com.svg'}
                         color={'#fee063'}
-                    ></CardServices>
+                        ></CardServices>
+
+                        <CardServices
+                        title={'Aplicaciones de Escritorio'}
+                        description={
+                            'Aprendido en la facultad, desarrollo con C# y WinForms, y bases sólidas en programación orientada a objetos.'
+                        }
+                        imageUrl={'/img/website-maintenance.svg'}
+                        color={'#fca311'}
+                        ></CardServices>
                 </Stack>
 
             </Box>

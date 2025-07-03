@@ -29,7 +29,10 @@ const About = () => {
                         mb={'1%'}
                     >Introducción</Text>
 
-                    <Text fontSize={'sm'}>¡Hola! Soy Erik, un apasionado estudiante de Ingeniería en Sistemas en la UTN FRC, con un ferviente deseo de explorar y dominar el mundo del desarrollo de software. Actualmente, estoy inmerso en un emocionante curso de Desarrollo Full Stack, donde estoy expandiendo mis habilidades y conocimientos para convertirme en un desarrollador versátil y eficiente.</Text>
+                    <Text fontSize={'sm'}>
+                        ¡Hola! Soy Erik, estudiante avanzado de Ingeniería en Sistemas en la UTN FRC. Me especializo en desarrollo full stack utilizando tecnologías modernas como React, Node.js y bases de datos. Me apasiona crear soluciones prácticas y eficientes, y estoy siempre buscando aprender y mejorar mis habilidades en proyectos reales.
+
+                    </Text>
                 </Box>
                 
                 <Box display={{base:'none', md:'Block'}} width={'35%'}>

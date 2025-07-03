@@ -7,10 +7,16 @@ import { motion, isValidMotionProp } from 'framer-motion'
 const Skills = () => {
 
     const skills = [
-        { name: 'Html', level: '70%', color: '#ffd400' },
+        { name: 'HTML', level: '70%', color: '#F16529' },
+        { name: 'CSS', level: '65%', color: '#2965f1' },
+        { name: 'JavaScript', level: '75%', color: '#f7df1e' },
+        { name: 'React', level: '80%', color: '#61dafb' },
+        { name: 'Node.js', level: '70%', color: '#3c873a' },
+        { name: 'C#', level: '60%', color: '#68217a' },
+        /*{ name: 'Html', level: '70%', color: '#ffd400' },
         { name: 'Css', level: '65%', color: '#18e738' },
         { name: 'Python', level: '45%', color: '#18e738' },
-        { name: 'C#', level: '80%', color: '#18e738' },
+        { name: 'C#', level: '80%', color: '#18e738' },*/
     ];
     return (
         <Box

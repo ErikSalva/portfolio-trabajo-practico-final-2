@@ -46,7 +46,7 @@ const Hero = () => {
                         as='h2'
                         mt='5%'
                     
-                    >Soy estudiante de desarrollo web <Text as='span'color={'#18e738'}>.</Text></Text>
+                    >Soy estudiante de Ing. en sistemas y desarrollador web <Text as='span'color={'#18e738'}>.</Text></Text>
                     <Stack
                         direction={{base:'column', sm:'row'}}
                         fontSize={{base:'md'}}
